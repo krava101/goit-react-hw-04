@@ -1,0 +1,36 @@
+.error{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px;
+    height: 90vh;
+
+    font-weight: 500;
+    text-align: center;
+}
+
+.errorMessage{
+    position: relative;
+    font-family: 'sans serif';
+    font-size: 28px;
+    color: rgb(110, 0, 0);
+    text-align: center;
+    z-index: 999;
+}
+
+.title{
+    position: relative;
+    font-size: 52px;
+    z-index: 999;
+}
+
+.status{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 400px;
+    font-weight: 700;
+
+    color: rgb(212, 212, 212);
+}
+
