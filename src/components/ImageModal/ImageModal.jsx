@@ -1,5 +1,5 @@
 import Modal from 'react-modal';
-import css from './ModalImg.module.css';
+import css from './ImageModal.module.css';
 
 Modal.setAppElement(document.getElementById('root'));
 

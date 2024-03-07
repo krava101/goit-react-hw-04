@@ -6,7 +6,7 @@ import fetchImgs from "../../images";
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
 import css from './App.module.css';
-import ModalImg from "../ModalImg/ModalImg";
+import ModalImg from "../ImageModal/ImageModal";
 
 
 const App = () => {
