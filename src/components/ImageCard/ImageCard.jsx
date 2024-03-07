@@ -5,9 +5,9 @@ const ImageCard = ({image,  onOpenModal}) => {
         <div className={css.imagesItem}>
             <a href={image.urls.regular} onClick={(event) => {
                     event.preventDefault();
-                    onOpenModal(event.currentTarget.href);
+                    onOpenModal(image.urls.regular, image.alt_description);
                 }}>
-                <img className={css.imagesImg} src={image.urls.small} alt=""  />
+                <img className={css.imagesImg} src={image.urls.small} alt={image.alt_description}  />
             </a>
         </div>
     );

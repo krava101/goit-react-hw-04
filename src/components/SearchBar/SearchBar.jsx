@@ -1,12 +1,19 @@
 import css from './SearchBar.module.css';
 import { IoIosSearch } from "react-icons/io";
 
+import toast, { Toaster } from 'react-hot-toast';
+
+const notify = () => toast.error('Field must be filled in!');
+
 const SearchBar = ({onSubmit}) => {
   return (<>
     <header>
       <form className={css.searchForm} onSubmit={(event) => {
         event.preventDefault();
-        if (event.currentTarget.elements.search.value) {
+        const search = event.currentTarget.elements.search.value;
+        if (!search) {
+          notify();
+        } else {
           onSubmit(event.currentTarget.elements.search.value);
           event.currentTarget.reset();
         }
@@ -20,6 +27,7 @@ const SearchBar = ({onSubmit}) => {
         />
       </form>
     </header>
+    <Toaster position="top-right" reverseOrder={false}/>
   </>)
 }
 
